@@ -1,0 +1,59 @@
+/* Global Reset / Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; 
+  color: #333;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Container for all links */
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each link “button” style */
+.link-button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  width: 280px; /* Adjust as desired */
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo next to text */
+.link-button img {
+  height: 28px; /* Adjust as needed */
+  width: auto;
+  margin-right: 12px;
+}
+
+.link-text {
+  line-height: 1.2;
+}
