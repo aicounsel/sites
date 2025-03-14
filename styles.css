@@ -55,8 +55,8 @@ h1 {
   width: auto;
 }
 
-/* Larger logos override for selected logos */
-.larger-logo {
-  height: 50px !important; /* Adjust size as needed */
-  width: auto;
+/* More specific rule for larger logos */
+.link-button img.larger-logo {
+  height: 50px !important;
+  width: auto !important;
 }
