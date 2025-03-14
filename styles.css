@@ -57,6 +57,6 @@ h1 {
 
 /* Larger logos override for selected logos */
 .larger-logo {
-  height: 50px; /* Adjust size as needed */
+  height: 50px !important; /* Adjust size as needed */
   width: auto;
 }
