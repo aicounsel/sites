@@ -57,7 +57,7 @@ body {
 
 /* Specific styling for SharePoint site buttons */
 .link-button.sharepoint-site {
-  justify-content: flex-start; /* Left-align logo and text */
+  justify-content: center;
   padding: 0 12px;
 }
 
@@ -68,6 +68,5 @@ body {
 }
 
 .link-button.sharepoint-site .site-title {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 12px;
 }
