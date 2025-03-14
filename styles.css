@@ -35,13 +35,23 @@ h1 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s, box-shadow 0.2s;
-  padding: 14px 18px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
+  /* Remove vertical padding and set a fixed height */
+  padding: 0 18px;
+  height: 60px; /* Fixed button height */
   width: 280px; /* Adjust as desired */
-  overflow: visible; /* Allow images to extend beyond the button */
+  overflow: visible; /* Allow images to extend beyond the container */
+}
+
+/* Generic logo styling for all buttons */
+.link-button img {
+  height: 28px;
+  width: auto;
+}
+
+/* More specific rule for larger logos */
+.link-button img.larger-logo {
+  height: 50px !important;
+  width: auto !important;
 }
 
 .link-button:hover {
@@ -53,10 +63,4 @@ h1 {
 .link-button img {
   height: 28px;
   width: auto;
-}
-
-/* More specific rule for larger logos */
-.link-button img.larger-logo {
-  height: 50px !important;
-  width: auto !important;
 }
