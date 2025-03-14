@@ -66,7 +66,7 @@ body {
 }
 
 .link-button img.wave-logo {
-  height: 70px !important;  /* sets a custom height just for the Wave logo */
+  height: 80px !important;  /* sets a custom height just for the Wave logo */
   width: auto !important;
 }
 
