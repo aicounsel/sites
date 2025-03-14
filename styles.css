@@ -50,7 +50,7 @@ h1 {
 
 /* More specific rule for larger logos */
 .link-button img.larger-logo {
-  height: 70px !important;
+  height: 50px !important;
   width: auto !important;
 }
 
