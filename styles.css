@@ -31,6 +31,7 @@ h1 {
 .link-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -40,6 +41,7 @@ h1 {
   color: #333;
   font-weight: 600;
   width: 280px; /* Adjust as desired */
+  overflow: visible; /* Allow images to extend beyond the button */
 }
 
 .link-button:hover {
@@ -47,13 +49,14 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Logo next to text */
+/* Standard logos */
 .link-button img {
-  height: 28px; /* Adjust as needed */
+  height: 28px;
   width: auto;
-  margin-right: 12px;
 }
 
-.link-text {
-  line-height: 1.2;
+/* Larger logos override for selected logos */
+.larger-logo {
+  height: 50px; /* Adjust size as needed */
+  width: auto;
 }
