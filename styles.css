@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.header-logo {
+  text-align: center;
+  margin-bottom: 20px; /* adjust spacing as needed */
+}
+
+.header-logo img {
+  max-width: 300px; /* or whatever size you prefer */
+  height: auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5; 
@@ -52,6 +62,11 @@ body {
 /* Larger logos override */
 .link-button img.larger-logo {
   height: 50px !important;
+  width: auto !important;
+}
+
+.link-button img.wave-logo {
+  height: 70px !important;  /* sets a custom height just for the Wave logo */
   width: auto !important;
 }
 
