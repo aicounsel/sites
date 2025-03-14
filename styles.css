@@ -12,11 +12,6 @@ body {
   padding: 40px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 /* Container for all links */
 .links-container {
   display: flex;
@@ -27,7 +22,7 @@ h1 {
   margin: 0 auto;
 }
 
-/* Each link “button” style */
+/* Each link “button” style with fixed dimensions */
 .link-button {
   display: flex;
   align-items: center;
@@ -35,23 +30,12 @@ h1 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  /* Remove vertical padding and set a fixed height */
   padding: 0 18px;
   height: 60px; /* Fixed button height */
-  width: 280px; /* Adjust as desired */
-  overflow: visible; /* Allow images to extend beyond the container */
-}
-
-/* Generic logo styling for all buttons */
-.link-button img {
-  height: 28px;
-  width: auto;
-}
-
-/* More specific rule for larger logos */
-.link-button img.larger-logo {
-  height: 50px !important;
-  width: auto !important;
+  width: 280px;
+  text-decoration: none;
+  color: #333;
+  overflow: visible; /* Allow images to extend outside the button */
 }
 
 .link-button:hover {
@@ -59,8 +43,31 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Standard logos */
+/* Standard logo styling */
 .link-button img {
   height: 28px;
   width: auto;
+}
+
+/* Larger logos override */
+.link-button img.larger-logo {
+  height: 50px !important;
+  width: auto !important;
+}
+
+/* Specific styling for SharePoint site buttons */
+.link-button.sharepoint-site {
+  justify-content: flex-start; /* Left-align logo and text */
+  padding: 0 12px;
+}
+
+.link-button.sharepoint-site img.sharepoint-logo {
+  height: 28px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.link-button.sharepoint-site .site-title {
+  font-size: 16px;
+  font-weight: bold;
 }
