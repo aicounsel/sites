@@ -59,6 +59,12 @@ body {
   width: auto;
 }
 
+/* Medium logos override */
+.link-button img.med-logo {
+  height: 40px !important;
+  width: auto !important;
+}
+
 /* Larger logos override */
 .link-button img.larger-logo {
   height: 50px !important;
