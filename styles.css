@@ -65,6 +65,12 @@ body {
   width: auto !important;
 }
 
+/* smaller logos override */
+.link-button img.smaller-logo {
+  height: 30px !important;
+  width: auto !important;
+}
+
 .link-button img.wave-logo {
   height: 80px !important;  /* sets a custom height just for the Wave logo */
   width: auto !important;
