@@ -1,99 +1,116 @@
 
-/* Basic reset / typography */
+/* Global Reset / Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.header-logo {
+  text-align: center;
+  margin-bottom: 30px; /* adjust spacing as needed */
+}
+
+.header-logo img {
+  max-width: 300px; /* or whatever size you prefer */
+  height: auto;
+}
+
 body {
-  font-family: sans-serif;
-  background: #f8f8f8;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #D0BCD5; 
+  color: #333;
+  padding: 40px;
 }
 
-/* Header & Progress Bar */
-header {
+/* Container for all links */
+.links-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-header h1 {
-  margin-bottom: 10px;
-}
-#progress-bar-container {
-  position: relative;
-  width: 300px;
-  height: 20px;
-  background: #dcdcdc;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-#progress-bar {
-  height: 100%;
-  width: 0;
-  background: #4caf50; /* Just an example color */
-  border-radius: 10px;
-  transition: width 0.4s;
-}
-#progress-text {
-  font-size: 0.9rem;
-  margin-left: 8px;
-}
-
-/* Main Container */
-.main-container {
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Document Viewer */
-.document-viewer {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-  border-radius: 6px;
-}
-.document-viewer h2 {
-  margin-bottom: 10px;
-}
-.highlightable {
-  cursor: pointer;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-.highlightable.selected {
-  background: #fffae6; /* Subtle highlight when selected */
+/* Each link “button” style with fixed dimensions */
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 0 18px;
+  height: 60px; /* Fixed button height */
+  width: 280px;
+  text-decoration: none;
+  color: #333;
+  overflow: visible; /* Allow images to extend outside the button */
 }
 
-/* Comments Panel */
-.comments-panel {
-  width: 300px;
-  background: #fff;
-  border-radius: 6px;
-  padding: 20px;
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.comments-panel h2 {
-  margin-bottom: 15px;
+
+/* Standard logo styling */
+.link-button img {
+  height: 28px;
+  width: auto;
 }
-.prompt-item {
-  margin-bottom: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  padding: 10px;
+
+/* Medium logos override */
+.link-button img.med-logo {
+  height: 40px !important;
+  width: auto !important;
 }
-.prompt-title {
-  font-weight: bold;
-  margin-bottom: 8px;
+
+/* Larger logos override */
+.link-button img.larger-logo {
+  height: 50px !important;
+  width: auto !important;
 }
-.prompt-question {
-  margin-bottom: 8px;
-  font-style: italic;
+
+/* smaller logos override */
+.link-button img.smaller-logo {
+  height: 25px !important;
+  width: auto !important;
 }
-.prompt-input {
-  width: 100%;
-  padding: 6px;
-  margin-bottom: 6px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+
+.link-button img.wave-logo {
+  height: 80px !important;  /* sets a custom height just for the Wave logo */
+  width: auto !important;
+}
+
+/* Specific styling for SharePoint site buttons */
+.link-button.sharepoint-site {
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.link-button.sharepoint-site img.sharepoint-logo {
+  height: 28px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.link-button.sharepoint-site .site-title {
+  font-size: 12px;
+}
+
+.link-button.adobe-site {
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.link-button.adobe-site img.adobe-logo {
+  height: 28px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.link-button.adobe-site .site-title {
+  font-size: 12px;
+  line-height: 1.2;
 }
