@@ -7,7 +7,7 @@
 
 .header-logo {
   text-align: center;
-  margin-bottom: 40px; /* adjust spacing as needed */
+  margin-bottom: 30px; /* adjust spacing as needed */
 }
 
 .header-logo img {
@@ -67,7 +67,7 @@ body {
 
 /* smaller logos override */
 .link-button img.smaller-logo {
-  height: 30px !important;
+  height: 25px !important;
   width: auto !important;
 }
 
